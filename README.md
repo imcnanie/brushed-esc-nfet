@@ -10,3 +10,5 @@ avr-objcopy -R .eeprom -O ihex main.out main.hex
 avr-size main.out
 
 sudo avrdude -P /dev/ttyACM0 -b 19200 -c arduino -p m8 -v -e -U flash:w:"main.hex":i
+```
+## Pinout ![pinout](IMG_20161214_174532.jpg)
